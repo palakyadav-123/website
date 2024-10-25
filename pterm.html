@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .cancel {
+      background-color: #f44336;
+    }
+
+    .cancel:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Terms & Conditions</h1>
+
+    <p>By using this Site, you agree to be bound by, and to comply with, these Terms and Conditions. If you do not agree to these Terms and Conditions, please do not use this site.</p>
+
+    <p><strong>PLEASE NOTE: </strong>We reserve the right, at our sole discretion, to change, modify or otherwise alter these Terms and Conditions at any time. Such changes and/or modifications shall become effective immediately upon the posting thereof. Please review the Terms and Conditions regularly to ensure you are aware of any changes.</p>
+
+    <div class="buttons">
+      <button id="agree">Accept</button>
+      <button id="cancel" class="cancel">Decline</button>
+    </div>
+  </div>
+
+  <script>
+    const agreeButton = document.getElementById('agree');
+    const cancelButton = document.getElementById('cancel');
+
+    agreeButton.addEventListener('click', () => {
+      alert('You have agreed to the Terms and Conditions!');
+      // Add code here to redirect to the next page or perform any other action
+    });
+
+    cancelButton.addEventListener('click', () => {
+      alert('You have declined the Terms and Conditions!');
+      // Add code here to redirect to the previous page or perform any other action
+    });
+  </script>
+</body>
+</html>
